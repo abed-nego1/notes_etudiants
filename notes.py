@@ -11,3 +11,10 @@ def calcul_moyenne():
 	moyenne= total/len(etudiants)
 	print(f"Moyenne de la classe :{moyenne:.2f}")
 	return moyenne
+
+def afficher_notes():
+	if not etudiants:
+	print ("Aucun étudiants.")
+	return 0
+     for i in etudiants: 
+	print(f"-{e['nom']}: {e['note']}/20")
